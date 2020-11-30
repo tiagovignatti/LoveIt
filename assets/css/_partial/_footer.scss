@@ -9,8 +9,18 @@ footer {
     font-size: .875rem;
 
     .footer-line {
+      color: rgb(231, 231, 231);
+      [theme=dark] & {
+        color: rgb(53, 53, 53);
+      }
       width: 100%;
 
+      a {
+        color: rgb(231, 231, 231);
+        [theme=dark] & {
+          color: rgb(53, 53, 53);
+        }
+      }
       .icp-br {
         display: none;
       }
