@@ -44,6 +44,13 @@ header {
   white-space: nowrap;
   text-overflow: ellipsis;
   @include flex(10);
+  // XXX(vignatti): dirty hack to get a non-existent title.
+  color: $header-background-color;
+  @include transition(box-shadow 0.3s ease);
+
+  [theme=dark] & {
+    color: $header-background-color-dark;
+  }
 }
 
 .menu .menu-item {
